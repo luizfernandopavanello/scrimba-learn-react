@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import TodoList from './components/TodoList';
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <MainContent />
-      <TodoList />
-      <Footer/>
-    </div>
-  );
+class App extends Component {
+  render () {
+    return (
+      <div>
+        <Header />
+        <MainContent />
+        <TodoList />
+        <Footer/>
+      </div>
+    );
+  }
 }
 
 export default App;
