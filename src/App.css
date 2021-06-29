@@ -1,9 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  background-color: #282c34;
+  color: white;
+  min-width: 100vw;
+  padding: 5px;
   text-align: center;
+  line-height: 2;
+}
+
+p {
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -15,7 +34,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +45,42 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.todo-list {
+  background-color: #282c34;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 10px 0;
+  width: 80%;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #e6e3e3;
+}
+
+input[type='checkbox'] {
+  margin-right: 8px;
+}
+
+.App-footer {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 @keyframes App-logo-spin {
