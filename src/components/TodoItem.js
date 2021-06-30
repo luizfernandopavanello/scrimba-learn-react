@@ -1,13 +1,14 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../App.css';
 
-function TodoItem(props) {
-  return(
-    <div className="todo-item">
-      <input type="checkbox"/>
-      <label>{props.item.text}</label>
-    </div>
-  )
+class TodoItem extends Component {
+  render() {
+    return(
+      <div className="todo-item">
+        <input type="checkbox" onChange={() => this.handleChange(this.item.id)}/>
+        <label>{this.item.text}</label>
+      </div>
+    )
+  }
 }
-
 export default TodoItem;
