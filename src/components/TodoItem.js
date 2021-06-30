@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../App.css';
 
-class TodoItem extends Component {
+class TodoItem extends React.Component {
   render() {
     return(
       <div className="todo-item">
